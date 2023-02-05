@@ -8,15 +8,20 @@ nav {
   /* Set padding and margin */
   padding: 10px 15px 25px 15px;
   margin: 2px 3px 5px 3px;
+  text-align: center;
 }
+
+header {
+  text-align: left;
+}
+
 nav ul li {
   /* Set display, margin, padding, font-size, background-color */
   font-size: 18px;
-  padding: 2px 5px;
+  padding: 10px 15px;
   background: #ffe4c4;
-  margin: 10px;
+  margin: 20px;
   display: inline-block;
-  /* ADD CENTERING */
 }
 
 nav a {
@@ -38,7 +43,7 @@ nav a.current {
 
 h1 {
   /*Set font and font size*/
-  font-size: 42px;
+  font-size: 48px;
   font-family: Merriweather, Anton, Times New Roman, Arial;
 }
 
@@ -46,11 +51,13 @@ h2 {
   /*Set font, font size, and alignment*/
   font-family: Anton, Times New Roman, Comic Sans;
   text-align: center;
+  font-size: 36px;
 }
 
 h3 {
   /*Set font size*/
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 h1,
@@ -62,42 +69,65 @@ h3 {
 .grid {
   /*Set width, margin, border properties, background color, and grid properties */
   display: grid;
-  grid-template-columns: repeat(3, 30%);
-  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   border-radius: 20px;
   border: solid 1px;
-  grid-column-gap: 50px;
   grid-row-gap: 10px;
+  background: #778898;
+  margin: 0px 5%;
 }
 
 .grid div {
   /* Set border properties, padding, and background color */
+  border: solid 2px;
+  border-radius: 13px;
+  background: white;
+  padding: 7px;
+  line-height: 1;
+  display: grid;
+  align-content: start;
 }
 
 .grid img {
   /* Set width, margin, and display */
+  justify-self: center;
+  width: 90%;
 }
 
 .grid div:nth-child(3n + 1) {
   /* Set box shadow */
+  box-shadow: 10px 5px 5px lightgray;
+  margin-right: 20px;
 }
 
 .grid div:nth-child(3n) {
   /* Set box shadow */
+  box-shadow: -10px 5px 5px lightgray;
+  margin-left: 20px;
 }
 
 .grid div:nth-child(3n + 2) {
   /* Set box shadow */
+  box-shadow: 10px 5px 5px lightgray, -10px 5px 5px lightgray;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 p + p {
   /* Set indentation */
+  text-indent: 10px;
 }
 
 p {
   /* Set margin */
+  margin: 10px;
 }
 
 .grid ul li {
   /* Set margin, line-spacing, list styling  */
+  line-spacing: 1;
+  list-style-image: url(../images/sketchbook.png);
+  margin-left: 50px;
+  margin-bottom: 10px;
 }
