@@ -31,7 +31,7 @@ nav a {
 
 a:visited {
   /* Set color */
-  color: black;
+  color: #000000;
 }
 
 nav a.current {
@@ -82,7 +82,7 @@ h3 {
   /* Set border properties, padding, and background color */
   border: solid 2px;
   border-radius: 13px;
-  background: white;
+  background: #ffffff;
   padding: 7px;
   line-height: 1;
   display: grid;
@@ -97,21 +97,21 @@ h3 {
 
 .grid div:nth-child(3n + 1) {
   /* Set box shadow */
-  box-shadow: 10px 5px 5px lightgray;
-  margin-right: 20px;
+  box-shadow: 10px 0px 5px #a8a9a9;
+  margin-right: 25px;
 }
 
 .grid div:nth-child(3n) {
   /* Set box shadow */
-  box-shadow: -10px 5px 5px lightgray;
-  margin-left: 20px;
+  box-shadow: -10px 0px 5px #a8a9a9;
+  margin-left: 25px;
 }
 
 .grid div:nth-child(3n + 2) {
   /* Set box shadow */
-  box-shadow: 10px 5px 5px lightgray, -10px 5px 5px lightgray;
-  margin-left: 20px;
-  margin-right: 20px;
+  box-shadow: 10px 0px 5px #a8a9a9, -10px 0px 5px #a8a9a9;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 p + p {
@@ -130,4 +130,8 @@ p {
   list-style-image: url(../images/sketchbook.png);
   margin-left: 50px;
   margin-bottom: 10px;
+}
+
+main {
+  margin: 15px;
 }
