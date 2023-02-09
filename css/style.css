@@ -11,6 +11,7 @@ nav {
   text-align: center;
 }
 
+/* to keep header left aligned, while keeping nav menu centered */
 header {
   text-align: left;
 }
@@ -71,9 +72,10 @@ h3 {
   /*Set width, margin, border properties, background color, and grid properties */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  width: 90vw;
   justify-items: center;
   border-radius: 20px;
-  border: solid 1px;
+  /* border: solid 1px; */
   grid-row-gap: 10px;
   background: #778898;
   margin: 0px 5%;
@@ -86,14 +88,15 @@ h3 {
   background: #ffffff;
   padding: 7px;
   line-height: 1;
-  display: grid;
-  align-content: start;
 }
 
 .grid img {
   /* Set width, margin, and display */
   justify-self: center;
   width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }
 
 .grid div:nth-child(3n + 1) {
